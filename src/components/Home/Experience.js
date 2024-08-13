@@ -76,6 +76,15 @@ const Experience = () => {
         </motion.div>
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 mobile:ml-2 sm:!ml-5 ">
+        <Details
+            position="Salesforce Developer"
+            company="Upp Techonology"
+            companyLink="https://www.upp-technology.com/"
+            time="2024-Present"
+            address="Hanoi, Vietnam"
+            work="   "
+          />
+
           <Details
             position="Customer Support Team Lead"
             company="MSQ"

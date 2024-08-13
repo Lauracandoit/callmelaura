@@ -4,14 +4,14 @@ import _1MyWork__indexMdx from './_1-my-work__index.mdx.json' assert { type: 'js
 import ifYouLoveThemLetThemGo__indexMdx from './If you love them, let them go__index.mdx.json' assert { type: 'json' }
 import inMyMind__indexMdx from './in-my-mind__index.mdx.json' assert { type: 'json' }
 import mollyIsMyBestFriend__indexMdx from './molly-is-my-best-friend__index.mdx.json' assert { type: 'json' }
-import my_corner__indexMdx from './my_corner__index.mdx.json' assert { type: 'json' }
-import neuLucDo__indexMdx from './neu-luc-do__index.mdx.json' assert { type: 'json' }
 import myHometownHanoi__indexMdx from './my-hometown-hanoi__index.mdx.json' assert { type: 'json' }
+import my_corner__indexMdx from './my_corner__index.mdx.json' assert { type: 'json' }
 import lifeChallenges__indexMdx from './life-challenges__index.mdx.json' assert { type: 'json' }
+import neuLucDo__indexMdx from './neu-luc-do__index.mdx.json' assert { type: 'json' }
 import oneDayWithWendy__indexMdx from './one-day-with-wendy__index.mdx.json' assert { type: 'json' }
 import weNeedToLiveWell__indexMdx from './we-need-to-live-well__index.mdx.json' assert { type: 'json' }
 import webAccessibilityBestPractices__indexMdx from './web-accessibility-best-practices__index.mdx.json' assert { type: 'json' }
 import webAccessibilityBestPracticesCopy__indexMdx from './web-accessibility-best-practices copy__index.mdx.json' assert { type: 'json' }
 import webDevelopmentToolsProductivity__indexMdx from './web-development-tools-productivity__index.mdx.json' assert { type: 'json' }
 
-export const allBlogs = [_1MyWork__indexMdx, ifYouLoveThemLetThemGo__indexMdx, inMyMind__indexMdx, mollyIsMyBestFriend__indexMdx, my_corner__indexMdx, neuLucDo__indexMdx, myHometownHanoi__indexMdx, lifeChallenges__indexMdx, oneDayWithWendy__indexMdx, weNeedToLiveWell__indexMdx, webAccessibilityBestPractices__indexMdx, webAccessibilityBestPracticesCopy__indexMdx, webDevelopmentToolsProductivity__indexMdx]
+export const allBlogs = [_1MyWork__indexMdx, ifYouLoveThemLetThemGo__indexMdx, inMyMind__indexMdx, mollyIsMyBestFriend__indexMdx, myHometownHanoi__indexMdx, my_corner__indexMdx, lifeChallenges__indexMdx, neuLucDo__indexMdx, oneDayWithWendy__indexMdx, weNeedToLiveWell__indexMdx, webAccessibilityBestPractices__indexMdx, webAccessibilityBestPracticesCopy__indexMdx, webDevelopmentToolsProductivity__indexMdx]
