@@ -31,7 +31,7 @@ const Blog = defineDocumentType(() => ({
 
     isPublished: {
       type: "boolean",
-      default: true,
+      default: false,
     },
     author: {
       type: "string",
