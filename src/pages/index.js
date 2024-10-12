@@ -21,6 +21,7 @@ export default function Home() {
             <div className="w-1/2 tablet:w-full">
               <Image
                 src={logo}
+                alt="Company logo"
                 className="w-full h-auto tablet:inline-block tablet:w-full mobile:w-full sm:w-full"
                 priority
                 sizes="(max-width: 768px) 100vw,
