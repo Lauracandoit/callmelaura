@@ -165,4 +165,167 @@ e. A scheduled sequence of prospect outreach activities can be created using cal
         </details>  
 
 
-10. Cosmic Travel Service has two froups of sales reps that would like to use a dashboard to access information about Opportunities. The first group would like a way to quickly access a dashboard that shows the total number of "Closed won" Opportunities with an amount greater than or equal to 100000. Similarly, the second group would like quick access to the number of Opportunities in the "Negotiation" stage with an amount greater than or equal to 10000. The system admin of the company has decided to use a single dashboard to meet both the requirements. She has created a dashboard with a funnel chart Component that shows the number of Opportunities by stage. What solution should be utilized to give the sales reps quick access to the number of Opportunities according to their requirement? <br />
+10. Cosmic Travel Service has two groups of sales reps that would like to use a dashboard to access information about Opportunities. The first group would like a way to quickly access a dashboard that shows the total number of "Closed won" Opportunities with an amount greater than or equal to 100000. Similarly, the second group would like quick access to the number of Opportunities in the "Negotiation" stage with an amount greater than or equal to 10000. The system admin of the company has decided to use a single dashboard to meet both the requirements. She has created a dashboard with a funnel chart Component that shows the number of Opportunities by stage. What solution should be utilized to give the sales reps quick access to the number of Opportunities according to their requirement? <br />
+Choose 1 answer: <br />
+a. Define two filters and create two custom dashboard URLs, each containing filter parameters <br />
+b. Define two filters and create a duplicate dashboard that uses different defult filter value<br />
+c. Define two conditional filters that filter the dashboard information based on the running user<br />
+d. Use two funnel chart components on the dashboard to show the number of Opportunities<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A <br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
+              Two customer dashboard URLs, each containing two filter parameters, can be created for this use case. Based on 2 filters defined on the dashboard, each URL can contain one filter parameter with a value for the 'Closed Won' or 'Negotiation' stage and a second filter parameter with a value for the required amount of 100000 or 10000. The first URL can display only 'Closed Won' Opportunities with an amount greater than or equal to 100000 and can be shared with the first group of sales reps. The second URL can display only Opportunities in the 'Negotiation' stage with an amount greater than or equal to 10000 and can be shared with the second group of sales reps. 
+              A sales rep who access the URL would see the dashboard with the filters already set. The URL (with the filtered detail appropriate for the sales rep group) can be provided as a clickable link from a Salesforce page. <br />
+              It is unnecessary to create a duplicate dashboard for the 2 requirements, especially since the admin would like to use a single dashboard filter. Two funnel chart components should not be used since the sales reps should only see the required information. It is not possible to define a 'conditional filter' for a dashboard
+              </div>
+        </details>  
+        
+11. A sales rep working at Cosmic Software Solutions uses sales dialer to make calls from Salesforce. She would like to reduce the time spent leaving voice mail messages when a customer is unavailable by using prerecorded voicemail messages. Which of the following statements are true about using this feature of Sales Dialer? <br />
+Choose 1 answer: <br />
+a. A keyboard shortcut can be pressed to leave a prerecorded voicemail message<br />
+b. Up to 10 incoming voicmail messages can be stored for each user<br />
+c. With the voicemail drop feature, each message can be up to 5 minutes long. <br />
+d. voicemail drop settings can be selected from the call panel to record a voicemail message<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              D<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
+              To record a voicemail message, reps can select 'Voicemail Drop settings' from the call panel or their personal settings. 
+              With the voicemail drop feature, each message can be up to one minute long. Users can store u p to 20 voicemail messages in Salesforce. During a call with a customer or prospect, an icon needs to be clicked in order to drop a pre-record voicemail message; keyboard shortcuts cannot be used for that.
+              </div>
+        </details>  
+
+12. Sales Cloud was recently impplemented at Cosmic Freight tools. The sales director of the company is interested in measuring adoption related to sales cloud usage by the sale reps. Which of the following reports would provide useful information?  <br />
+Choose 2 answers: <br />
+a. Total value of opportunities won by each sales rep<br />
+b. Total number of reports created by each sales rep<br />
+c. Total number of logins by each sales rep<br />
+d. Total number of accounts created by each sales rep<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              C, D<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
+               The total number of logins is the first measurement of adoption when Salesforce implementation has just been started. On the other hand, the number of accounts created would indicate that the sales reps are using Salesforce and not merely logging in without doing anything. The Salesforce Adoption Dashboards can be downloaded from the AppExchange for more examples of metrics to measure adoption related to Sales Cloud usage. <br />
+               The total value of won opportunities would be useful to understand the impact on business performance. Tht total number of reports created woule not necessarily allow measuring adoption related to Sales Cloud usage. 
+              </div>
+        </details>  
+
+13. A forecast manager would like to analyze how accurately the sales team is forecasting by looking at the changes in the forecast amounts over a quater. What steps would be required to report on this? <br />
+Choose 2 answers: <br />
+a. Configure the display options on the Forecasts page to show changes<br />
+b. Enable Historical trending for forecasting items<br />
+c. Create a new custom report type to include Forecast history<br />
+d. Create a forecast history report using an existing report type<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              B, D<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
+               A report on how forecast amounts have changed can be created by enabling Historical trending for 'forecasting items' and creating a report based on the 'Forecasting items with historical trending' report type. Historical trending can be enabled for "forecasting items' only if collaborative forecasting has been enabled.  <br />
+
+               There is no need to create a new custom report type. 'Show changes n the last 7 days' is available as a display option on the forecasts page, but will not be able to show changes in the forecast amounts over a quarter. 
+                 </div>
+        </details>  
+
+14. The sales director of Cosmic Enterprises would like to view the number of follow-ups performed for each opportunity to understand if the number influences the opportunity closure rate. Which reporting solution should be recommended to meet this requirement?   <br />
+Choose 1 answer: <br />
+a. Create a custom report based on a custom report based on a report type with 'Opportunities' as the primary object and 'Activities' as the related object. <br />
+b. Create a roll-up summary field to count the number of activities related to opportunities and create a custom opportunity report that includes the field<br />
+c. Create a custom report based on a custom report type with 'Activities' as the primary object and 'Opportunities' as the related object<br />
+d. Use the team performance dashboard in revenue insights, and view the 'Activities completed' and 'win rate%' metrics<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
+              A custom report can be created using a custom report type with 'Opportunities' as the primary object and activities as the related object <br />
+
+              'Activities' cannot be the primary object when creating a custom report type with opportunities. A roll-up summary field would not work since a master-detail relationship does not exist between activities and opportunities. The team performance dashboard can provide useful information based on the metrics, but it will not be able to providethe data per opportunity. 
+              </div>
+        </details>  
+
+15. The sales manager at Cosmic Solutions wants a report on campaigns that show their influences on the number of opportunities and the amount of revenue. What report should be run? <br />
+Choose 1 answer: <br />
+a. A report with a custom report type showing campaigns and opportunities<br />
+b. A report with the standard report type 'campaigns with influenced Opportunities'<br />
+c. A report with the standard report type 'Opportunities with influenced Campaigns'<br />
+d. A report with the standard report type 'Campaigns with a filter for opportunities' <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              B <br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
+              The standard report type of 'Campaigns with influenced Opportunities' shows users the influence of campaigns on the number of opportunities and the amount of revenue
+              </div>
+        </details>  
+
+16. If an organization is using cumulative forecast rollups, what is true regarding the Opportunity amounts included in the 'Open Pipeline' forecast? <br />
+Choose 2 answers<br />
+a. It does not include amounts from closed Opportunities<br />
+b. It does not include amounts from Opportunities under the 'Omitted' category<br />
+c. It only includes amounts from all Opportunities in the Pipeline category<br />
+d. It excludes amounts from Opportunities closing after 90 days<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A, B<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
+               The 'Open Pipeline' forecast includes amounts from all open Opportunities except those under the 'Omitted' and 'Closed' forcast categories. It reflects the sum of the Opportunities under the 'Pipeline', 'Best Case', and 'Commit' categories. <br />
+               It does not include closed Opportunities, and it does not involve any time-baesed criteria. If the 'Most Likely' forecast category has been added, then opportunities under that category will be included as well. 
+              </div>
+        </details>  
+        
+17. A Sales Manager has noticed that certain Opportunities are supposed to close this month, but they are not being incorporated into the forecast. The organization currently uses a forecast type based on Opportunity revenue, and the 'Close Date' values are correct for this month. What could be the reason behind this issue? <br />
+Choose 1 answer: <br />
+a. The Opportunity is in the incorrect territory<br />
+b. There are Opportunity Splits on these Opportunity records<br />
+c. The 'Forecast Category' value on the Opportunity record is 'Ommitted' <br />
+d. Opportunity stages have not been correlated to forecast categories  yet. <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              C<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
+              Opportunity splits and territory management are not related to the monthly forecasts. Selecting a forecast category is required when creating an Opportunity stage, and existing stages are already correlated with forecast categories.  <br />
+              The only potential reason for this issue is that the Opportunities the manager believes should go into the monthly forecast have the forecast category set as Omitted
+              </div>
+        </details>  
+
+18. A public group of sales representavtives who work for Cosmic Innovation would like to view a sales dashboard that shows metrics related to their performance in the sales department. They do not need to edit the dashboard components or the underlying reports. What should a Sales Cloud consultant recommend for this requirement? <br />
+Choose 2 answers: <br />
+a. Grant 'View' acccess to the dashboard folder that contains the sales dashboard<br />
+b. Assign 'Run Reports' permission to the sales representavtives using a persmission set<br />
+c. Assign 'View Dashboards' permission to the sales representatives using a permission set<br />
+d. Grant Edit access to the dashboard folder that contains the sales dashboard<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A and B<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
+              To allow the sales representatives to view the sales dashboard, the 'Run Reports' permission should be assigned to them. It allows users to view reports and dashboards. they should also be given 'View' access to the dashboard folder that contains the sales dashboard, which would allow them to view the dashboards in the folder. <br />
+              There is no 'View Dashboards' permission. Granting 'Edit' access to the dashboard folder is unnecessary since the sales reps do not need to edit the dashboard components or underlying reports. 
+              </div>
+        </details>  
+
+19. Cosmic Gemina is a transportation company that has sales divisions in three countries, namely, Frence, Germany, and Italy. Each sales division has a sales manager who should be able to view and edit custom sales reports that have been created for their division. A seperate report folder has been created for each sales division and shared with the Sales Manager. Which user permission and folder acccess level should be assigned to each sales manager for this requirement? <br />
+Choose 1 answer: <br />
+a. 'Manage Reports' permission and 'collaborator' access level <br />
+b. 'Customize Reports' permission and 'collaborator' access level <br />
+c. 'Report Builder' permission and 'Editor' access level<br />
+d. 'Create and Customize Reports' permission and 'Editor' access level <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              D<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
+               Each sales manager should be granted the user permission to 'Create and Customize Reports' through a permission set, which  would allow them to create, edit and delete reports in shared folders. The folder needs to be shared with each sales manager, and they need to be given 'Editor' access to the report folder that contains their sales division's performance reports. The 'Editor' access level would allow each sales manager to view, edit, save, rename, and move the reports in the folder. 
+              </div>
+        </details>  
+
+
+
+
