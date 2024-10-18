@@ -8,8 +8,7 @@ author: "Wendy"
 isPublished: true
 tags:
 - Salesforce
-- Sales_Cloud
-- Sales_Lifecycle
+- Sales-Cloud
 ---
 
 1. The sales director of Cosmic Innovation should be able to search for and delete reports in personal and private folders. If all the users of the company use Lightning Experience only, which permission should be assigned to the director for this requirement?
@@ -198,7 +197,7 @@ d. voicemail drop settings can be selected from the call panel to record a voice
               </div>
         </details>  
 
-12. Sales Cloud was recently impplemented at Cosmic Freight tools. The sales director of the company is interested in measuring adoption related to sales cloud usage by the sale reps. Which of the following reports would provide useful information?  <br />
+12. Sales Cloud was recently implemented at Cosmic Freight tools. The sales director of the company is interested in measuring adoption related to sales cloud usage by the sale reps. Which of the following reports would provide useful information?  <br />
 Choose 2 answers: <br />
 a. Total value of opportunities won by each sales rep<br />
 b. Total number of reports created by each sales rep<br />
@@ -210,11 +209,11 @@ d. Total number of accounts created by each sales rep<br />
               C, D<br/>
                  <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
                The total number of logins is the first measurement of adoption when Salesforce implementation has just been started. On the other hand, the number of accounts created would indicate that the sales reps are using Salesforce and not merely logging in without doing anything. The Salesforce Adoption Dashboards can be downloaded from the AppExchange for more examples of metrics to measure adoption related to Sales Cloud usage. <br />
-               The total value of won opportunities would be useful to understand the impact on business performance. Tht total number of reports created woule not necessarily allow measuring adoption related to Sales Cloud usage. 
+               The total value of won opportunities would be useful to understand the impact on business performance. The total number of reports created would not necessarily allow measuring adoption related to Sales Cloud usage. 
               </div>
         </details>  
 
-13. A forecast manager would like to analyze how accurately the sales team is forecasting by looking at the changes in the forecast amounts over a quater. What steps would be required to report on this? <br />
+13. A forecast manager would like to analyze how accurately the sales team is forecasting by looking at the changes in the forecast amounts over a quarter. What steps would be required to report on this? <br />
 Choose 2 answers: <br />
 a. Configure the display options on the Forecasts page to show changes<br />
 b. Enable Historical trending for forecasting items<br />
@@ -283,22 +282,22 @@ d. It excludes amounts from Opportunities closing after 90 days<br />
 Choose 1 answer: <br />
 a. The Opportunity is in the incorrect territory<br />
 b. There are Opportunity Splits on these Opportunity records<br />
-c. The 'Forecast Category' value on the Opportunity record is 'Ommitted' <br />
+c. The 'Forecast Category' value on the Opportunity record is 'Omitted' <br />
 d. Opportunity stages have not been correlated to forecast categories  yet. <br />
 <details>
               <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
               <div >
               C<br/>
                  <span style={{ color: 'blue', fontWeight: 'bold' }}>Explantion: </span> 
-              Opportunity splits and territory management are not related to the monthly forecasts. Selecting a forecast category is required when creating an Opportunity stage, and existing stages are already correlated with forecast categories.  <br />
+              Opportunbity splits and territory management are not related to the monthly forecasts. Selecting a forecast category is required when creating an Opportunity stage, and existing stages are already correlated with forecast categories.  <br />
               The only potential reason for this issue is that the Opportunities the manager believes should go into the monthly forecast have the forecast category set as Omitted
               </div>
         </details>  
 
-18. A public group of sales representavtives who work for Cosmic Innovation would like to view a sales dashboard that shows metrics related to their performance in the sales department. They do not need to edit the dashboard components or the underlying reports. What should a Sales Cloud consultant recommend for this requirement? <br />
+18. A public group of sales representatives who work for Cosmic Innovation would like to view a sales dashboard that shows metrics related to their performance in the sales department. They do not need to edit the dashboard components or the underlying reports. What should a Sales Cloud consultant recommend for this requirement? <br />
 Choose 2 answers: <br />
 a. Grant 'View' acccess to the dashboard folder that contains the sales dashboard<br />
-b. Assign 'Run Reports' permission to the sales representavtives using a persmission set<br />
+b. Assign 'Run Reports' permission to the sales representatives using a permission set<br />
 c. Assign 'View Dashboards' permission to the sales representatives using a permission set<br />
 d. Grant Edit access to the dashboard folder that contains the sales dashboard<br />
 <details>
@@ -311,7 +310,7 @@ d. Grant Edit access to the dashboard folder that contains the sales dashboard<b
               </div>
         </details>  
 
-19. Cosmic Gemina is a transportation company that has sales divisions in three countries, namely, Frence, Germany, and Italy. Each sales division has a sales manager who should be able to view and edit custom sales reports that have been created for their division. A seperate report folder has been created for each sales division and shared with the Sales Manager. Which user permission and folder acccess level should be assigned to each sales manager for this requirement? <br />
+20. Cosmic Gemina is a transportation company that has sales divisions in three countries, namely, Frence, Germany, and Italy. Each sales division has a sales manager who should be able to view and edit custom sales reports that have been created for their division. A separate report folder has been created for each sales division and shared with the Sales Manager. Which user permission and folder access level should be assigned to each sales manager for this requirement? <br />
 Choose 1 answer: <br />
 a. 'Manage Reports' permission and 'collaborator' access level <br />
 b. 'Customize Reports' permission and 'collaborator' access level <br />
@@ -325,6 +324,79 @@ d. 'Create and Customize Reports' permission and 'Editor' access level <br />
                Each sales manager should be granted the user permission to 'Create and Customize Reports' through a permission set, which  would allow them to create, edit and delete reports in shared folders. The folder needs to be shared with each sales manager, and they need to be given 'Editor' access to the report folder that contains their sales division's performance reports. The 'Editor' access level would allow each sales manager to view, edit, save, rename, and move the reports in the folder. 
               </div>
         </details>  
+
+21. Cosmic Travel Services has two groups of sales reps that would like to use a dashboard to access information about opportunities. The first group would like a way to quickly access a dashboard that shows the total number of
+'Closed Won' opportunities with an amount greater than or equal to 100,000. Similarly, the second group would like quick access to the number of opportunities in the 'Negotiation' stage with an amount greater than or equal to 10,000. 
+The system administrator of the company has decided to use a single dashboard to meet both the requirements. She has created a dashboard with a funnel chart component that shows the number of opportunities by stage. What solution should be utilized to give the sales reps quick access to the number of opportunities<br />
+Choose 1 answer: <br />
+a. Define two filters and create a duplicate dashboard that uses different default filter values. <br />
+b. Define two filters and create two custom dashboard URLs, each containing filter parameters.<br />
+c. Define two conditional filters that filter the dashboard information based on the running user.<br />
+d. Use two funnel chart components on the dashboard to show the number of opportunities.<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              B<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Two custom dashboard URLs, each containing two filter parameters, can be created for this use case. Based on two filters defined on the dashboard, each URL can contain one filter parameter with a value for the 'Closed Won' or 'Negotiation' stage and a second filter parameter with a value for the required amount of 100,000 or 10,000. The first URL can display only 'Closed Won' opportunities with an amount greater than or equal to 100,000 and can be shared with the first group of sales reps.
+The second URL can display only opportunities in the 'Negotiation' stage with an amount greater than or equal to 10,000 and can be shared with the second group of sales reps.
+A sales rep who accesses the URL would see the dashboard with the filters already set. The URL (with the filtered detail appropriate for the sales rep group) can be provided as a clickable link from a Salesforce
+page.
+It is unnecessary to create a duplicate dashboard for the two requirements, especially since the administrator would like to use a single dashboard. It is also not possible to define a default filter value for a dashboard filter. Two funnel chart components should not be used since the sales reps should only see the required information. It is not possible to define a 'conditional filter' for a dashboard.
+              </div>
+        </details> 
+
+
+22.  If cumulative forecast rollups are enabled, under which forecast categories are Opportunity amounts shown in the 'Best Case Forecast' column?<br />
+Choose 1 answer: <br />
+a. Commit + Best Case + Pipeline<br />
+b. Commit + Best Case<br />
+c. Commit + Closed + Best Case<br />
+d. Best Case<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      C<br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+If cumulative forecast rollups are enabled, Opportunity amounts from Opportunities that have a 'Commit', 'Best Case', or 'Closed' forecast category are rolled up and displayed in the 'Best Case Forecast' column.
+In Lightning Experience, a 'Most Likely' forecast category can also be enabled and shown. If it is, then the 'Most Likely' forecasts would be in between 'Commit' and 'Best Case!.
+      </div>
+</details> 
+
+23. Sales reps at Cosmic Computers need access to a map on their mobile device that allows them to find warehouses and gain quick access to stock information for various types of computer components sold by the company. They also need to be able to place an order for a customer from the map, which needs to be integrated with the company's external order management system. Which of the following solutions should be utilized for this requirement if the company has sufficient manpower and budget for development? <br />
+Choose 1 answer. <br />
+A. Salesforce Maps can be utilized, but the order functionality needs to be developed programmatically. <br />
+B. A custom solution needs to be developed programmatically since the Salesforce mobile app cannot fulfill the requirements<br />
+C. A map app that supports the Salesforce mobile app and offers order functionality can be downloaded from the AppExchange<br />
+D. Salesforce Maps can be configured, and the external order management system can be integrated with Salesforce<br />
+
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D. <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Salesforce Maps can be accessed on the standalone Salesforce Maps mobile app, the Salesforce mobile Lightning app, and a supported mobile browser. A custom button can be configured on the map for placing orders. An integration can be performed declaratively using Salesforce Connect, External Services, outbound messages, and platform events.
+Although an app that offers the required functionality can be downloaded from the AppExchange, a declarative option is available.
+      </div>
+</details> 
+
+
+24. The newly hired sales rep at Bright Paints Inc. has updated the stage of an existing Opportunity.
+What could be affected by that update to the stage?<br />
+Choose 1 answer: <br />
+a. Opportunity Owner<br />
+b. Deal Amount<br />
+c. Forecast Category<br />
+d. Activities<br />
+
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      C<br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+The Forecast Category changes depending on the Stage of an Opportunity. The Deal Amount, Activities, and Opportunity Owner field values will not be affected by changes to the Stage value.      </div>
+</details> 
+
 
 
 
