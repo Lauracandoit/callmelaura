@@ -37,13 +37,18 @@ export default function Home() {
                 <h2>
                   <TypeAnimation
                     sequence={[
-                      // Same substring at the start will only be typed out once, initially
+                     
                       "Laura ",
-                      1000, // wait 1s before replacing "Mice" with "Hamsters"
+                      1000, 
                       "A Web Developer",
+                      1000,
+                      "A Salesforce Admin",
+                      1000,
+                      "A Salesforce Developer",
                       1000,
                       "A Customer Support Team Lead ",
                       1000,
+
                     ]}
                     wrapper="span"
                     speed={50}
@@ -60,7 +65,7 @@ export default function Home() {
                 and my personal experience day by day. Hope you are enjoy the
                 time here and find something interesting and helpful. Do not
                 hesitate to reach out in case you have any questions for me. I
-                wish you a nice journey and wonderful day{" "}
+                wish you a nice journey and wonderful day.{" "}
               </p>
               <div className="flex items-center self-center  mt-2 laptop:self-center  ">
                 <Link

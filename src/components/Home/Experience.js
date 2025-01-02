@@ -82,7 +82,7 @@ const Experience = () => {
             companyLink="https://www.upp-technology.com/"
             time="2024-Present"
             address="Hanoi, Vietnam"
-            work="   "
+            work="I&#39;m response for internal Salesforce System where I build the Salesproces that matches the requirments from Company/Sales team. "
           />
 
           <Details
