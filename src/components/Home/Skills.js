@@ -35,12 +35,10 @@ const Skills = () => {
         <Skill name="NextJs" x="10vw" y="5vw" />
         <Skill name="Rest API" x="10vw" y="-18vw" />
         <Skill name="CSS" x="20vw" y="-10vw" />
-        <Skill name="SQL/MySQL" x="-15vw" y="-20vw" />
+        <Skill name="Jquery" x="-15vw" y="-20vw" />
         <Skill name="Problem Solving" x="-29vw" y="-8vw" />
         <Skill name="QA" x="-15vw" y="5vw" />
         <Skill name="Organization Skills" x="-20vw" y="20vw" />
-        <Skill name="Apex" x="-7vw" y="-10vw" />
-        <Skill name="LWC" x="7vw" y="-8vw" />
       </div>
     </>
   );

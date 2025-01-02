@@ -43,8 +43,6 @@ export default function BlogPage() {
       </div>
       <BlogDetails blog={blog} slug={slug} />
       <div className="grid grid-cols-12 gap-16 tablet:gap-12 mobile:gap-10 sm:gap-5  mt-8 px-10 text-dark dark:text-light ">
-      {blog.toc && blog.toc.length > 0 && (
-
         <div className="laptop:col-span-4 tablet:col-span-4 mobile:col-span-12 sm:col-span-12 ">
           <details
             className="border-[1px] border-solid border-dark dark:border-light rounded-lg p-4 sticky top-6 max-h-[90vh] overflow-hidden overflow-y-auto"
@@ -81,8 +79,7 @@ export default function BlogPage() {
             </ul>
           </details>
         </div>
-      )}
-        <RenderMdx  className="blog-post" blog={blog} />
+        <RenderMdx blog={blog} />
       </div>
     </article>
   );

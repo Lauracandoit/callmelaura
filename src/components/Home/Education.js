@@ -52,15 +52,7 @@ const Education = () => {
           {" "}
         </motion.div>
 
-      <ul className="w-full flex flex-col items-start justify-between ml-4 mobile:ml-3 sm:!ml-1 mobile:pl-10 sm:pl-5">
-      <Details
-          type="Salesforce AI Specialist "
-          time="October 2024"
-          place="Salesforce"
-          info="Certified in leveraging Salesforce's AI capabilities to enhance business processes through intelligent automation, data-driven insights, and advanced machine learning models. Proficient in using tools like Einstein AI to deliver personalized, scalable solutions in CRM and business operations."
-        />
-
-        
+        <ul className="w-full flex flex-col items-start justify-between ml-4 mobile:ml-3 sm:!ml-1 mobile:pl-10 sm:pl-5">
           <Details
             type="Salesforce Certified Administrator "
             time="August 2024"
