@@ -53,6 +53,13 @@ const Education = () => {
         </motion.div>
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 mobile:ml-3 sm:!ml-1 mobile:pl-10 sm:pl-5">
+        <Details
+            type="Salesforce Certified AI Specialist"
+            time="August 2024"
+            place="Salesforce"
+            info="The Salesforce Administrator certification is the baseline credential for any Salesforce professional. This exam will showcase your knowledge of Salesforce features and best practice configuration, demonstrating your ability to keep the platform running smoothly, as well as customize it to suit a businesss needs."
+          />
+
           <Details
             type="Salesforce Certified Administrator "
             time="August 2024"

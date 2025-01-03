@@ -77,12 +77,12 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 mobile:ml-2 sm:!ml-5 ">
         <Details
-            position="Salesforce Developer"
+            position="Salesforce Admin/ Developer"
             company="Upp Techonology"
             companyLink="https://www.upp-technology.com/"
             time="2024-Present"
             address="Hanoi, Vietnam"
-            work="   "
+            work=" As a Salesforce Admin/Developer, My responsibility is supportinh our Sales Team working in the system and also do the development for features that required to help our team growing. I also do the training for the team member who are new to the system"
           />
 
           <Details
