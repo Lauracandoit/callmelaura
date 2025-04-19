@@ -1,0 +1,967 @@
+---
+title: "Sales Lifecycle - Sales Cloud Consultant part 1"
+description: " Let's study to get Sales Cloud Consultant Certificate with me"
+image: "../../public/blogs/salescloud.png"
+publishedAt: "2024-10-06"
+updatedAt: "2024-10-06"
+author: "Wendy"
+isPublished: true
+tags:
+- Salesforce
+- Sales-Cloud
+---
+
+1. The sales director of Cosmic Innovation should be able to search for and delete reports in personal and private folders. If all the users of the company use Lightning Experience only, which permission should be assigned to the director for this requirement?
+Choose 1 answer:  <br/>
+a. Manage all private reports and dashboards. <br/>
+b. Create and customize reports <br/>
+c. Create reports <br/>
+d. Manage custom reports. <br/>
+        <details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A <br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  In order to search for an delete reports in private folders, the director should have the "Manage All private reports and dashboards' permission enabled on their profle or assigned permission set. 'Create and Customize reports' permission only allows deleting reports in my personal custom reports folder. <br/>
+                  There are no permissions called 'manage custom reports' and ' create reports' in Salesforce
+              </div>
+        </details>  
+
+2. After internal analysis, the VP of Sales has concluded that the closure of an Opportunity is directly proportional to the number of Activities per week. A weekly report needs to be generated and it should contain the numberof different types of Activities, split across the Opportunity record types that company has. What is the best way to meet this requirement? <br/> 
+Choose 1 answer: <br />
+a. A report in matrix format scheduled as a weekly email.  <br />
+b. A report in Summary format schedule as a weekly email.  <br />
+c. A report in Tabular format scheduled as a weekly email.  <br />
+d. A weekly export of the Opportunity an Activity data to produce the report in Excel.  <br />
+ <details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+                  a. <br />
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  The standard 'Activities with Opportunities report' type can be used to generate this metric. A matrix reprot can be created by grouping the columns by  'Opportunity record type' and grouping the rows by 'Task subtype'. The report can be scheduled as a weekly email to the VP of Sales. 
+              </div>
+        </details>  
+
+
+3. The admin of Cosmic Solution has created a report that shows accounts by region. Each user who accesses this report should only be able to view the accounts that they own. Which relative value shoould be used when setting up a personalized report filter for this requirement?  <br />
+Choose 1 answer: <br />
+a. $USER <br />
+b. $Owner<br />
+c. $currentuser <br />
+ <details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A. <br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  A personalized report filter can be created by defining a filter on a user field using a relative value that personalizes the results for each user who views the report. When setting up a filter on a user field, such as Account Owner, $User can be selected as the relative value. This changes the filter value to the currently signed in user. Only user-related fields support this feature. 
+
+                  $currentuser and $owner are invalid relative values
+              </div>
+        </details>  
+
+
+4. The Sales managers of Cosmic Innovation would like to view the rate at which sales reps working under them are closing sales deals in Salesforce. What must be enabled or set up to track the change history of key Opportunity fields like Stage, including old and new values? 
+Choose 1 answer:  <br />
+a. AppExchange package  <br />
+b. Field History tracking on the Opportunity object  <br />
+c. Field Audit Trail   <br />
+d. Reporting Snapshot   <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              b <br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  Field History Tracking can be enabled on the Opportunity object to create field history reports that show old and new values of fields such as Stage. Field Audit trail is used to set field history retention policies. Although reporting snapshots can be used to report on historical data, it is used to report on records regularly at a specific time, such as closed Opportunities at 5 PM every day. Installing an AppExchange package is not required for field history reports.
+              </div>
+        </details>  
+
+
+
+5. All the users of Cosmic Enterprises are using Lightning Experience. While creating an event, a sales representative of the company would like to add a contact and a person account as attendees to the event. What should a Salesforce Admin do to meet this requirement? <br />
+Choose 1 answer: <br />
+a. Add the attendees field to the Event Page layout<br />
+b. All the 'Account' and 'Contact' fields to the Event page layout<br />
+c. Enable a checkbox in "Activity Settings" to allow users to add attendees<br />
+d. Set up Lightning Sync to allow users to add attendees<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A <br/>
+
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+            The addtendess field can be added to the Event Page layout to allow users to add Salesforce users, contact, person accounts, and leads to the events that they create in lightning experience. Setting up Lightning Sync is only required to send invitations to attendees and receive their responses. There is also no setting in 'Activity Settings' that can be enabled to allow users to add attendees 
+              </div>
+        </details>  
+
+6. Cosmic Solutions has implemented Salesforce with users' mobility requirements in mind. Sales reps are required to check their devices whenever they are out to meet customers and should update the records with details about their visit as and when it happens. How can the Salesforce Admin monitor usage and adoption of the Salesforce mobile app?<br />
+Choose 2 answers: <br />
+a. By monitoring Salesforce mobile app login activity of all users using reports such as 'Salesforce for iOS and Android Adoption Reports and dashboards'<br />
+b. By monitoring Salesforce mobile app login activity of all users under Setup > Company Information<br />
+c. By monitoring Salesforce mobile app login activity of all users under Setup > Security > Network Access<br />
+d. By monitoring Salesforce mobile app login activity of all users under Setup > Connected App OAuth Usage<br />
+
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A and D<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                Salesforce mobile app is a connected app that uses OAuth to verify users. For monitoring purposes, Salesforce tracks the OAuth connection history for users, which helps identify who is accessing the app. Under Setup > Connected Apps OAuth Usage, details are available regarding how many users accessed Salesforce for iOS/Android, when the initial connection was made, and the date/time the mobile app was last used. Salesforce Admin can also create reports and dashboards based on login history and connected apps usage to quickly access details on who logged in, when, and using which application, all in one place. Free apps on AppExchange can assist with the same.  
+  Note: User's Salesforce mobile app login history data is not available under 'Setup > Company Information' or 'Setup > Security > Network Access'.
+              </div>
+        </details>  
+
+
+7. Worldwide containers has clearly defined its annual sales quota which is based on revenue, the sales manager would like to depict the quota achievement on a dashboard pertaining to opportunity data. What would be the best dashboard Component to use?  <br />
+Choose 1 answer:<br />
+a. Pie Chart  <br />
+b. Gauge  <br />
+c. Funnel Chart  <br />
+d. Donut Chart  <br />
+
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              B<br/>
+
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+            A gauge can be used to represent a single metric across a named scale. It is useful for showing progress towards a goal. Charts, on the other hand, are used to show data graphically.
+              </div>
+        </details>  
+
+8. Cosmic Whole Foods would like to use a data visualization tool to discover hidden insights and make impactful business decisions. Which Tableau product would be the most suitable for the company's requirement?<br />
+Choose 1 answer:  <br />
+a. Tableau Desktop  <br />
+b. Tableau Prep  <br />
+c. Tableau Server  <br />
+
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A<br/>
+
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+             Tableau Desktop is a data visualization tool that offers an intuitive, drag-and-drop interface to discover hidden insights and make impactful business decisions. Tableau Prep is a data preparation tool that can be used to clean, shape, and combine data for analysis in Tableau. Tableau Server is a secure, on-premises solution for Tableau deployment; it is used to prepare, author, analyze, collaborate, publish, and share data.
+              </div>
+        </details>  
+
+
+9. Cosmic Furniture uses Salesforce and is looking for a solution that gives sales reps the ability to nurture their prospects using consistent and predefined sales outreach activities. Which of the following are valid features of sales engagement that would meet this requirement?  <br />
+Choose 3 answers: <br />
+a. A scheduled sequence of prospect outreach activities can be created using call scripts and email templates  <br />
+b. The 'My Feed' tab can be accessed to view the last 180 days of engagement with prospects  <br />
+c. Sales managers and reps can add leads to a cadence that defines the outreach steps  <br />
+d. The 'My List' tab can be used by a sales rep to tackle personal, one-off activities  <br />
+e. A scheduled sequence of prospect outreach activities can be created using call scripts and email templates <br />
+
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              C, D, E<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+              Sales engagement features Cadence Builder, which can be used to create scheduled sequences of outreach activities called 'Cadences'. While creating a cadence, the type of sales outreach step can be selected. It can be Call, Email, LinkedIn Step, Custom Step, or Wait. Both sales managers and reps can add contacts, leads, and person accounts to a cadence. Records can be added to a cadence from a record detail page, list view, or report. The 'My List' tab allows sales reps to tackle personal, one-off activities that aren't associated with cadences.  
+    Sales reps can use the "work queue" in the Lightning Sales Console to work on the assigned leads. The 'Cadences' tab shows the activities defined by sales managers. The "My Feed" tab shows the last 30 days of engagement with prospects.
+              </div>
+        </details>  
+
+
+10. Cosmic Travel Service has two groups of sales reps that would like to use a dashboard to access information about Opportunities. The first group would like a way to quickly access a dashboard that shows the total number of "Closed won" Opportunities with an amount greater than or equal to 100000. Similarly, the second group would like quick access to the number of Opportunities in the "Negotiation" stage with an amount greater than or equal to 10000. The system admin of the company has decided to use a single dashboard to meet both the requirements. She has created a dashboard with a funnel chart Component that shows the number of Opportunities by stage. What solution should be utilized to give the sales reps quick access to the number of Opportunities according to their requirement? <br />
+Choose 1 answer: <br />
+a. Define two filters and create two custom dashboard URLs, each containing filter parameters <br />
+b. Define two filters and create a duplicate dashboard that uses different defult filter value<br />
+c. Define two conditional filters that filter the dashboard information based on the running user<br />
+d. Use two funnel chart components on the dashboard to show the number of Opportunities<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A <br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+              Two customer dashboard URLs, each containing two filter parameters, can be created for this use case. Based on 2 filters defined on the dashboard, each URL can contain one filter parameter with a value for the 'Closed Won' or 'Negotiation' stage and a second filter parameter with a value for the required amount of 100000 or 10000. The first URL can display only 'Closed Won' Opportunities with an amount greater than or equal to 100000 and can be shared with the first group of sales reps. The second URL can display only Opportunities in the 'Negotiation' stage with an amount greater than or equal to 10000 and can be shared with the second group of sales reps. 
+              A sales rep who access the URL would see the dashboard with the filters already set. The URL (with the filtered detail appropriate for the sales rep group) can be provided as a clickable link from a Salesforce page. <br />
+              It is unnecessary to create a duplicate dashboard for the 2 requirements, especially since the admin would like to use a single dashboard filter. Two funnel chart components should not be used since the sales reps should only see the required information. It is not possible to define a 'conditional filter' for a dashboard
+              </div>
+        </details>  
+        
+11. A sales rep working at Cosmic Software Solutions uses sales dialer to make calls from Salesforce. She would like to reduce the time spent leaving voice mail messages when a customer is unavailable by using prerecorded voicemail messages. Which of the following statements are true about using this feature of Sales Dialer? <br />
+Choose 1 answer: <br />
+a. A keyboard shortcut can be pressed to leave a prerecorded voicemail message<br />
+b. Up to 10 incoming voicmail messages can be stored for each user<br />
+c. With the voicemail drop feature, each message can be up to 5 minutes long. <br />
+d. voicemail drop settings can be selected from the call panel to record a voicemail message<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              D<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+              To record a voicemail message, reps can select 'Voicemail Drop settings' from the call panel or their personal settings. 
+              With the voicemail drop feature, each message can be up to one minute long. Users can store u p to 20 voicemail messages in Salesforce. During a call with a customer or prospect, an icon needs to be clicked in order to drop a pre-record voicemail message; keyboard shortcuts cannot be used for that.
+              </div>
+        </details>  
+
+12. Sales Cloud was recently implemented at Cosmic Freight tools. The sales director of the company is interested in measuring adoption related to sales cloud usage by the sale reps. Which of the following reports would provide useful information?  <br />
+Choose 2 answers: <br />
+a. Total value of opportunities won by each sales rep<br />
+b. Total number of reports created by each sales rep<br />
+c. Total number of logins by each sales rep<br />
+d. Total number of accounts created by each sales rep<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              C, D<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+               The total number of logins is the first measurement of adoption when Salesforce implementation has just been started. On the other hand, the number of accounts created would indicate that the sales reps are using Salesforce and not merely logging in without doing anything. The Salesforce Adoption Dashboards can be downloaded from the AppExchange for more examples of metrics to measure adoption related to Sales Cloud usage. <br />
+               The total value of won opportunities would be useful to understand the impact on business performance. The total number of reports created would not necessarily allow measuring adoption related to Sales Cloud usage. 
+              </div>
+        </details>  
+
+13. A forecast manager would like to analyze how accurately the sales team is forecasting by looking at the changes in the forecast amounts over a quarter. What steps would be required to report on this? <br />
+Choose 2 answers: <br />
+a. Configure the display options on the Forecasts page to show changes<br />
+b. Enable Historical trending for forecasting items<br />
+c. Create a new custom report type to include Forecast history<br />
+d. Create a forecast history report using an existing report type<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              B, D<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+               A report on how forecast amounts have changed can be created by enabling Historical trending for 'forecasting items' and creating a report based on the 'Forecasting items with historical trending' report type. Historical trending can be enabled for "forecasting items' only if collaborative forecasting has been enabled.  <br />
+
+               There is no need to create a new custom report type. 'Show changes n the last 7 days' is available as a display option on the forecasts page, but will not be able to show changes in the forecast amounts over a quarter. 
+                 </div>
+        </details>  
+
+14. The sales director of Cosmic Enterprises would like to view the number of follow-ups performed for each opportunity to understand if the number influences the opportunity closure rate. Which reporting solution should be recommended to meet this requirement?   <br />
+Choose 1 answer: <br />
+a. Create a custom report based on a custom report based on a report type with 'Opportunities' as the primary object and 'Activities' as the related object. <br />
+b. Create a roll-up summary field to count the number of activities related to opportunities and create a custom opportunity report that includes the field<br />
+c. Create a custom report based on a custom report type with 'Activities' as the primary object and 'Opportunities' as the related object<br />
+d. Use the team performance dashboard in revenue insights, and view the 'Activities completed' and 'win rate%' metrics<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+              A custom report can be created using a custom report type with 'Opportunities' as the primary object and activities as the related object <br />
+
+              'Activities' cannot be the primary object when creating a custom report type with opportunities. A roll-up summary field would not work since a master-detail relationship does not exist between activities and opportunities. The team performance dashboard can provide useful information based on the metrics, but it will not be able to providethe data per opportunity. 
+              </div>
+        </details>  
+
+15. The sales manager at Cosmic Solutions wants a report on campaigns that show their influences on the number of opportunities and the amount of revenue. What report should be run? <br />
+Choose 1 answer: <br />
+a. A report with a custom report type showing campaigns and opportunities<br />
+b. A report with the standard report type 'campaigns with influenced Opportunities'<br />
+c. A report with the standard report type 'Opportunities with influenced Campaigns'<br />
+d. A report with the standard report type 'Campaigns with a filter for opportunities' <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              B <br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+              The standard report type of 'Campaigns with influenced Opportunities' shows users the influence of campaigns on the number of opportunities and the amount of revenue
+              </div>
+        </details>  
+
+16. If an organization is using cumulative forecast rollups, what is true regarding the Opportunity amounts included in the 'Open Pipeline' forecast? <br />
+Choose 2 answers<br />
+a. It does not include amounts from closed Opportunities<br />
+b. It does not include amounts from Opportunities under the 'Omitted' category<br />
+c. It only includes amounts from all Opportunities in the Pipeline category<br />
+d. It excludes amounts from Opportunities closing after 90 days<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A, B<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+               The 'Open Pipeline' forecast includes amounts from all open Opportunities except those under the 'Omitted' and 'Closed' forcast categories. It reflects the sum of the Opportunities under the 'Pipeline', 'Best Case', and 'Commit' categories. <br />
+               It does not include closed Opportunities, and it does not involve any time-baesed criteria. If the 'Most Likely' forecast category has been added, then opportunities under that category will be included as well. 
+              </div>
+        </details>  
+        
+17. A Sales Manager has noticed that certain Opportunities are supposed to close this month, but they are not being incorporated into the forecast. The organization currently uses a forecast type based on Opportunity revenue, and the 'Close Date' values are correct for this month. What could be the reason behind this issue? <br />
+Choose 1 answer: <br />
+a. The Opportunity is in the incorrect territory<br />
+b. There are Opportunity Splits on these Opportunity records<br />
+c. The 'Forecast Category' value on the Opportunity record is 'Omitted' <br />
+d. Opportunity stages have not been correlated to forecast categories  yet. <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              C<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+              Opportunbity splits and territory management are not related to the monthly forecasts. Selecting a forecast category is required when creating an Opportunity stage, and existing stages are already correlated with forecast categories.  <br />
+              The only potential reason for this issue is that the Opportunities the manager believes should go into the monthly forecast have the forecast category set as Omitted
+              </div>
+        </details>  
+
+18. A public group of sales representatives who work for Cosmic Innovation would like to view a sales dashboard that shows metrics related to their performance in the sales department. They do not need to edit the dashboard components or the underlying reports. What should a Sales Cloud consultant recommend for this requirement? <br />
+Choose 2 answers: <br />
+a. Grant 'View' acccess to the dashboard folder that contains the sales dashboard<br />
+b. Assign 'Run Reports' permission to the sales representatives using a permission set<br />
+c. Assign 'View Dashboards' permission to the sales representatives using a permission set<br />
+d. Grant Edit access to the dashboard folder that contains the sales dashboard<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A and B<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+              To allow the sales representatives to view the sales dashboard, the 'Run Reports' permission should be assigned to them. It allows users to view reports and dashboards. they should also be given 'View' access to the dashboard folder that contains the sales dashboard, which would allow them to view the dashboards in the folder. <br />
+              There is no 'View Dashboards' permission. Granting 'Edit' access to the dashboard folder is unnecessary since the sales reps do not need to edit the dashboard components or underlying reports. 
+              </div>
+        </details>  
+
+20. Cosmic Gemina is a transportation company that has sales divisions in three countries, namely, Frence, Germany, and Italy. Each sales division has a sales manager who should be able to view and edit custom sales reports that have been created for their division. A separate report folder has been created for each sales division and shared with the Sales Manager. Which user permission and folder access level should be assigned to each sales manager for this requirement? <br />
+Choose 1 answer: <br />
+a. 'Manage Reports' permission and 'collaborator' access level <br />
+b. 'Customize Reports' permission and 'collaborator' access level <br />
+c. 'Report Builder' permission and 'Editor' access level<br />
+d. 'Create and Customize Reports' permission and 'Editor' access level <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              D<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+               Each sales manager should be granted the user permission to 'Create and Customize Reports' through a permission set, which  would allow them to create, edit and delete reports in shared folders. The folder needs to be shared with each sales manager, and they need to be given 'Editor' access to the report folder that contains their sales division's performance reports. The 'Editor' access level would allow each sales manager to view, edit, save, rename, and move the reports in the folder. 
+              </div>
+        </details>  
+
+21. Cosmic Travel Services has two groups of sales reps that would like to use a dashboard to access information about opportunities. The first group would like a way to quickly access a dashboard that shows the total number of
+'Closed Won' opportunities with an amount greater than or equal to 100,000. Similarly, the second group would like quick access to the number of opportunities in the 'Negotiation' stage with an amount greater than or equal to 10,000. 
+The system administrator of the company has decided to use a single dashboard to meet both the requirements. She has created a dashboard with a funnel chart component that shows the number of opportunities by stage. What solution should be utilized to give the sales reps quick access to the number of opportunities<br />
+Choose 1 answer: <br />
+a. Define two filters and create a duplicate dashboard that uses different default filter values. <br />
+b. Define two filters and create two custom dashboard URLs, each containing filter parameters.<br />
+c. Define two conditional filters that filter the dashboard information based on the running user.<br />
+d. Use two funnel chart components on the dashboard to show the number of opportunities.<br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              B<br/>
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Two custom dashboard URLs, each containing two filter parameters, can be created for this use case. Based on two filters defined on the dashboard, each URL can contain one filter parameter with a value for the 'Closed Won' or 'Negotiation' stage and a second filter parameter with a value for the required amount of 100,000 or 10,000. The first URL can display only 'Closed Won' opportunities with an amount greater than or equal to 100,000 and can be shared with the first group of sales reps.
+The second URL can display only opportunities in the 'Negotiation' stage with an amount greater than or equal to 10,000 and can be shared with the second group of sales reps.
+A sales rep who accesses the URL would see the dashboard with the filters already set. The URL (with the filtered detail appropriate for the sales rep group) can be provided as a clickable link from a Salesforce
+page.
+It is unnecessary to create a duplicate dashboard for the two requirements, especially since the administrator would like to use a single dashboard. It is also not possible to define a default filter value for a dashboard filter. Two funnel chart components should not be used since the sales reps should only see the required information. It is not possible to define a 'conditional filter' for a dashboard.
+              </div>
+        </details> 
+
+
+22.  If cumulative forecast rollups are enabled, under which forecast categories are Opportunity amounts shown in the 'Best Case Forecast' column?<br />
+Choose 1 answer: <br />
+a. Commit + Best Case + Pipeline<br />
+b. Commit + Best Case<br />
+c. Commit + Closed + Best Case<br />
+d. Best Case<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      C<br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+If cumulative forecast rollups are enabled, Opportunity amounts from Opportunities that have a 'Commit', 'Best Case', or 'Closed' forecast category are rolled up and displayed in the 'Best Case Forecast' column.
+In Lightning Experience, a 'Most Likely' forecast category can also be enabled and shown. If it is, then the 'Most Likely' forecasts would be in between 'Commit' and 'Best Case!.
+      </div>
+</details> 
+
+23. Sales reps at Cosmic Computers need access to a map on their mobile device that allows them to find warehouses and gain quick access to stock information for various types of computer components sold by the company. They also need to be able to place an order for a customer from the map, which needs to be integrated with the company's external order management system. Which of the following solutions should be utilized for this requirement if the company has sufficient manpower and budget for development? <br />
+Choose 1 answer. <br />
+A. Salesforce Maps can be utilized, but the order functionality needs to be developed programmatically. <br />
+B. A custom solution needs to be developed programmatically since the Salesforce mobile app cannot fulfill the requirements<br />
+C. A map app that supports the Salesforce mobile app and offers order functionality can be downloaded from the AppExchange<br />
+D. Salesforce Maps can be configured, and the external order management system can be integrated with Salesforce<br />
+
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D. <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Salesforce Maps can be accessed on the standalone Salesforce Maps mobile app, the Salesforce mobile Lightning app, and a supported mobile browser. A custom button can be configured on the map for placing orders. An integration can be performed declaratively using Salesforce Connect, External Services, outbound messages, and platform events.
+Although an app that offers the required functionality can be downloaded from the AppExchange, a declarative option is available.
+      </div>
+</details> 
+
+
+24. The newly hired sales rep at Bright Paints Inc. has updated the stage of an existing Opportunity.
+What could be affected by that update to the stage?<br />
+Choose 1 answer: <br />
+a. Opportunity Owner<br />
+b. Deal Amount<br />
+c. Forecast Category<br />
+d. Activities<br />
+
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      C <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+The Forecast Category changes depending on the Stage of an Opportunity. The Deal Amount, Activities, and Opportunity Owner field values will not be affected by changes to the Stage value.     
+      </div>
+</details> 
+
+
+
+25. The Sales Managers at Costa Gears are taking a more proactive role in managing the opportunity pipeline. The Sales Cloud Consultant recommended that they utilize Pipeline Inspection. Which of the following capabilities are features of Pipeline Inspection? <br />
+Choose 3 answers: <br />
+a. The 'Pipeline' tab can be accessed to view the changes to opportunities in different forecast categories over time.<br />
+b. Key performance indicators for sales pipelines are displayed as metrics at the top of the page.<br />
+c. Tiered Einstein opportunity scores are displayed along with key factors and score changes.<br />
+d. Only the opportunities of a specific record type can be edited inline by filtering a list view.<br />
+e. Filters can be applied to narrow the view by criteria or to help identify areas of concern.<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      B, C and E <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      Pipeline Inspection is available as part of the Sales Cloud license at no extra cost with Enterprise, Performance, and Unlimited editions. It provides sales managers with better visibility of their pipeline by providing information on key metrics (based on the available number and currency fields), opportunities, and weekly changes. Metrics such as new opportunities created, increases or decreases in amounts, and overdue opportunities, can be displayed for the sales teams.
+Pipeline views can be created using different filters to help identify areas of concern. Pipeline Inspection users who have the 'Revenue Intelligence User' or the 'Revenue Intelligence Admin' permission set can see the changes to opportunities in different forecast categories over time from the 'Flow' tab. Opportunities of multiple record types can be edited inline in the same list view. Users do not have to filter list views by one record type to edit opportunities inline.
+Einstein Deal Insights, powered by Einstein's machine learning capability, predicts the opportunities unlikely to be won in the current month. Lastly, Einstein Conversation Insights and Email Insights are also features of Pipeline Inspection. Einstein Conversation Insights and Email Insights provide sales agents with the information they need to analyze all customer interactions to track deals. These functionalities encompass suggested actions, such as reviewing call and email logs, producing call summaries for voice and video calls, and generating editable summaries to incorporate future actions and client input.
+      </div>
+</details> 
+
+26. Cosmic Cloud Solutions is a small company with 80 users in Salesforce. The VP of Sales requires a view of the number of leads assigned to each of the sales team members and how it varies per week. Which of the following should be recommended for this requirement? <br />
+Choose 1 answer: <br />
+a. Summary report on Lead object, grouped by Owner. <br />
+b. Matrix report on Lead object, grouped by Owner and CreatedDate<br />
+c. Joined report between Lead and User object<br />
+d. Reporting snapshot built on a Lead Summary report<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Reports show the current state of data in the system. To satisfy this requirement, one would need to define a reporting snapshot of the number of leads owned by each user and run it weekly.
+Historical trend reporting is available in all orgs by default (or on request if the org was created before 2014), but it doesn't fulfil the requirements as stated in the requirement.
+      </div>
+</details> 
+
+27. The Sales manager asked the Salesforce Administrator how she can share dashboards and reports with particular users. What is true regarding the sharing of Reports and Dashboards? <br />
+Choose 1 answer: <br />
+a. The owner of the report or dashboard needs to manually add users to an access list to view a report or dashboard <br />
+b. All users have access to reports and dashboards in all folders<br />
+c. For a user to view a report or dashboard, it needs to be shared with the user<br />
+d. For a user to view a report or dashboard, the folder needs to be shared with the user<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Reports and dashboards are shared through folders. Folders that contain the reports are shared, but not the report or dashboard itself. The Users, Public Groups, or Roles are given Viewer, Editor, or Manager access by the folder manager to the folder where the report or dashboard is stored.
+      </div>
+</details> 
+
+
+28. Cosmic Investments implemented Sales Cloud Einstein to enhance their sales processes, and the Sales director wants to add deal outcome projection, week-to-week deal changes, and important deal activities. What should the consultant recommend to meet these requirements? <br />
+Choose 1 answer: <br />
+a. Community Insights<br />
+b. Dashboard Insights<br />
+c. Account Insights<br />
+d. Deal Insights in Pipeline Inspection<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      Einstein Deal Insights can be enabled in Pipeline Inspections.
+Einstein Deal Insights offers sales representatives predictions and recommendations based on opportunities, calls, emails, and cases, directly within the Pipeline Inspection view. Users can choose which insights to display in Pipeline Inspection to assist sales representatives in progressing deals.
+      </div>
+</details> 
+
+29. A sales manager of Cosmic Solutions would like to leverage Al capabilities to automate the process of identifying and adding detailed information about contacts from email interactions. This should include information like phone numbers, addresses, titles, department groups, and buyer attributes. The goal is to build content-rich profiles for all contacts and display these profiles on buyer relationship maps to enhance deal-closing efforts.
+Which Salesforce feature should be enabled to meet this requirement? <br />
+Choose 1 answer: <br />
+a. Sales Engagement.<br />
+b. Automatic Contact Enhancements. <br />
+c. Einstein Contact Enhancements.<br />
+d. Sales Cloud Everywhere<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      B <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Automatic Contact Enhancements can be enabled in Setup under Autocreation settings. With this feature enabled, generative Al can be leveraged to automatically add details to contacts based on sales activity. This information can be added to a buyer relationship map, helping to visualize key decision makers in a deal or account.
+Sales Engagement is a streamlined solution offered by Salesforce that is tailored to inside sales teams. It includes features such as the Lightning Sales Console, Cadences, Work Queues, and Einstein Lead Scoring. Sales Cloud Everywhere is a Chrome extension that lets users access productivity tools from any website. There is no feature called Einstein Contact Enhancements.      
+</div>
+</details> 
+
+30. Cosmic Bakery is a startup company in New York that has recently started using Salesforce for managing customer accounts and orders.
+The company would like to offer home delivery to its customers through a team of riders. When a rider is sent to deliver an order to a customer, their supervisor should be able to track and save their location and activity on the local map. In addition, the company would like to build optimized territories for selling its products based on geographic potential and reach. Which Salesforce product can be utilized to meet these requirements?<br />
+Choose 1 answer: <br />
+a. Einstein Location Insights. <br />
+b. Einstein Map Insights. <br />
+c. Salesforce Locations. <br />
+d. Salesforce Maps. <br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Salesforce Maps is the location intelligence technology offered by Salesforce. It can be used for visualizing any Salesforce data, territory planning, tracking live locations, and optimizing routes and schedules. Live Tracking can be used to put a pin on the map to track the location of delivery riders. It also provides the ability to save their location and activity.
+Salesforce Maps can be purchased with Territory Planning, which allows smart planning of territories to create efficient territory boundaries. Advanced territory optimization allows building and realigning optimized territories to maximize geographic potential and reach. An overlay can be added on a map to provide geographical characteristics within borders. Data layers can be used for location analysis by incorporating specific data from external sources.
+Salesforce Locations, Einstein Location Insights, and Einstein Map Insights are non-existent products.
+      </div>
+</details> 
+
+31. A sales manager of Cosmic Innovation would like to create dashboards about certain key performance indicators in Lightning Experience. She would also need the ability to edit and delete those dashboards when required. The Salesforce Administrator of the company has enabled enhanced folder sharing for reports and dashboards in Salesforce.
+Which of the following user permissions must be assigned to the sales manager for the requirement?<br />
+Choose 2 answers: <br />
+a. Run Dashboards<br />
+b. Run Reports<br />
+c. Create and Customize Dashboards<br />
+d. Create and Customize Reports<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      B and C <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+To create dashboards in Lightning Experience with enhanced folder sharing enabled, a user must have both the 'Run Reports' and
+'Create and Customize Dashboards' permissions assigned. These permissions are also required to edit and delete the dashboards that have been created by the user.
+The 'Create and Customize Reports' permission is only applicable to managing reports, and managing reports was not mentioned in the scenario. There is no user permission called 'Run Dashboards'.
+      </div>
+</details> 
+
+
+32. The system administrator of Cosmic Solutions has enabled
+Collaborative Forecasting in Salesforce and added a forecast type based on opportunities, revenue, and the default forecast date type.
+Which Opportunity fields will the forecasts be based on?<br />
+Choose 2 answers: <br />
+a. Amount.<br />
+b. Product Date. <br />
+c. Quantity. <br />
+d. Close Date. <br />
+<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A and D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+When the forecast type is based on opportunities, revenue, and the default forecast date type, i.e., 'Close date, the forecasts are based on the 'Amount' and 'Close Date' fields of the opportunity records.
+'Product Date' is a field on the 'Opportunity Product' object, and it is used when the forecast date type is 'Product date. The 'Quantity' field on the Opportunity object is used when 'Quantity' is selected instead of 'Revenue' as the forecast measurement.
+      </div>
+</details> 
+
+33. The Sales Reps of Cosmic Electronics are required to use Sales Dialer to call prospects from Salesforce. The Sales Manager is concerned about the poor performance of the reps working under him, and he is looking for a way to improve the quality of their calls. Which capabilities of Sales Dialer can help the Sales Manager achieve this
+goal?<br />
+Choose 2 answers: <br />
+a. Call Recording can be enabled to allow sales reps to record calls from the call panel.<br />
+b. Call Monitoring can be enabled, and the required permission can be granted to the Sales Manager.<br />
+c. Local Presence can be enabled, and the required licenses can be granted to the Sales Reps.<br />
+d. Dialer number can be assigned for making and receiving calls.<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A and B <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+'Call Monitoring' can be enabled to allow the sales manager to silently monitor sales reps' interactions with customers from the
+'Monitor' tab. This would allow the manager to identify the strengths and weaknesses of the sales reps and provide personalized coaching to them. Permission set with the 'Access Dialer Monitoring' permission would need to be assigned to the sales manager.
+Sales reps can also be given the ability to record their calls from the call panel, which can be done by enabling 'Call Recording' in 'Dialer Settings! This would allow them to refer back to important conversations to improve their selling techniques. Calls can be recorded by default by activating the 'Enable Default Recording' option in Setup.
+The other features offered by Sales Dialer, such as Local Presence and Dialer Number, would not improve the call quality of sales reps.
+Note: Sales Dialer was previously called Lightning Dialer.
+      </div>
+</details> 
+
+34. OrbitFlux Inc has recently run a marketing campaign to boost sales.
+They are applying a 10% discount to all Opportunities greater than $250,000. The Sales Director wants a report that compares the total revenue of all the Opportunities without the discounts applied against the total revenue of all the Opportunities with the discounts applied.
+What reporting feature should be used to meet this requirement?<br />
+Choose 1 answer: <br />
+a. Cross filter<br />
+b. Bucket columns<br />
+c. Row limit<br />
+d. Row-level formula<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Additional totals can be calculated based on the numerical values of each record in a report with a row-level formula and its sum at the bottom.
+Cross-filters are used when there is a need to include or exclude records in report results based on related objects and their fields.
+Bucket columns are used to categorize report records without creating a formula or a custom field. Row limit filters limit the number of results in a report to the desired number of rows.
+      </div>
+</details> 
+
+35. A sales manager wants a report created that shows the quota details of the sales team and its individual members. When creating the custom report type for this report, which primary object should be selected?<br />
+Choose 1 answer: <br />
+a. Opportunities<br />
+b. Forecasting Quotas<br />
+c. Quotas<br />
+d. Forecasts<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      B <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+A report that shows an individual's and a team's quotas can be created using a custom report type that has 'Forecasting Quotas' as the primary object. This custom report type can include fields such as the quota owner's name and territory. The report can then be filtered to see the quotas that the user created including their related accounts, owners, and territories.
+Choosing Opportunities as the primary object for the custom report type will not satisfy the requirement as it will not have quota-related fields. Forecasts and Quotas do not exist as options when selecting a primary object for a custom report type.
+      </div>
+</details> 
+
+36. Cosmic Sporting Goods is a company with a telesales contact center in San Francisco. Many of the company's existing and potential customers live in the United States. Sales reps at the contact center use Sales Dialer to make and receive calls via Salesforce. With the purpose of increasing customer engagement, which feature can be enabled to ensure that phone numbers appear with the same area code as the prospects that reps are calling?<br />
+Choose 1 answer: <br />
+a. Local Presence<br />
+b. Global Presence<br />
+c. Dialer Number<br />
+d. Call Monitoring<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Local Presence can be enabled to show local numbers when calling customers with Sales Dialer. It is for use only by customers in the US and is intended to be used to dial only US numbers.
+      </div>
+</details> 
+
+37. The Salesforce Administrator of Cosmic Enterprises has been asked to load 1,000 users, 20 million accounts, 30 million contacts, and 50 million opportunities into Salesforce. A number of sharing rules need to be created to define the users' access to the records of these objects. Which of the following are important considerations for minimizing the loading time?<br />
+Choose 2 answers<br />
+a. Sharing rules should be activated after loading all the data.<br />
+b. Custom fields should be indexed before loading the data.<br />
+c. The users should be loaded before other records.<br />
+d. Account records should be loaded before users, contacts, and opportunities.<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A and C <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      The following order should be followed for loading the data:
+      1. Users
+      2. Accounts
+      3. Contacts
+      4. Opportunities
+      Once the users and other records have been loaded, any new sharing rules can be activated. Also, sharing calculations for existing sharing rules should be deferred before the data load, until all the data has been loaded. The new sharing rules can be created at once and then recalculated.
+      Indexing custom fields prior to a data load does not improve loading performance.
+      </div>
+</details> 
+
+38. You have created a Sales Dashboard for the head of sales, and all sales reps have access to it. All sales reps can see all of the data, even though they do not normally have access to it. How can you make sure that users are only able to see the data that they have the right to see within the existing dashboard?<br />
+Choose 1 answer: <br />
+a. Configure the dashboard to View dashboard As Dashboard Viewer<br />
+b. This is not possible<br />
+c. Configure the dashboard to View dashboard As a specified user<br />
+d. Change the dashboard folder settings<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+If the dashboard is configured to View Dashboard as Dashboard
+Viewer, it will run using the security settings of the user viewing the dashboard. Each user sees the dashboard according to his or her own access level. This approach helps administrators share one common set of dashboard components with users having different levels of access.     
+      </div>
+</details> 
+
+39. If cumulative forecast rollups are enabled, which forecast categories are used to roll up Opportunity amounts for the 'Commit Forecast' column?<br />
+Choose 1 answer: <br />
+a. Commit<br />
+b. Commit + Closed<br />
+c. Commit + Best Case. <br />
+d. Commit + Best Case + Pipeline.<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      B <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+If cumulative forecast rollups are enabled, Opportunity amounts from Opportunities that have a 'Commit' or 'Closed' forecast category are rolled up and displayed in the 'Commit Forecast' column.
+      </div>
+</details> 
+
+40. If a Sales team is using Einstein for Sales and Einstein Conversation Insights, which of the following features can help Sales users identify the most important topics for their customers, gain more detailed insights, and prepare for potential opportunities or obstacles?<br />
+Choose 1 answer: <br />
+a. Sales Conversations<br />
+b. Sales Opportunities<br />
+c. Sales Signals<br />
+d. Sales Engagement<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      C <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Sales Signals leverage Einstein generative Al and large language models (LLMs) to identify the most important topics for customers based on their conversations with the sales team. These topics can be filtered by category and keyword, allowing for a focused dashboard view related to the conversation. This feature is available when both Einstein Conversation Insights and Einstein for Sales are enabled.
+      Sales Engagement is a streamlined solution offered by Salesforce that is tailored to inside sales teams. It includes features such as the Lightning Sales Console, Cadences, Work Queues, and Einstein Lead Scoring. There are no features in Salesforce called 'Sales Conversations' or 'Sales Opportunities.
+      </div>
+</details> 
+
+41. The sales managers of Cosmic Innovation would like to view the rate at which sales reps working under them are closing sales deals in Salesforce. What must be enabled or set up to track the change history of key opportunity fields like Stage, including old and new values?<br />
+Choose 1 answer: <br />
+a. Reporting Snapshot. <br />
+b. Field Audit Trail. <br />
+c. AppExchange package. <br />
+d. Field History Tracking on the Opportunity object. <br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Field History Tracking can be enabled on the Opportunity object to create field history reports that show old and new values of fields such as Stage. Field Audit Trail is used to set field history retention policies. Although reporting snapshots can be used to report on historical data, it is used to report on records regularly at a specific time, such as closed opportunities at 5 PM every day. Installing an AppExchange package is not required for field history reports.
+      </div>
+</details> 
+
+42. Which of the following is true about closed lost opportunities and forecasts?<br />
+Choose 1 answer: <br />
+a. The 'Do Not Include in Forecast' setting should be checked for the 'Closed Lost' opportunity stage to exclude closed lost opportunities from the forecast.<br />
+b. The closed lost opportunities are always displayed in the 'Lost' column of the forecast.<br />
+c. The 'Closed Lost' opportunity stage is mapped to the 'Omitted' forecast category by default, and closed lost opportunities are excluded from the forecast.<br />
+d. The 'Closed Lost' opportunity stage needs to be manually mapped to the 'Omitted' forecast category to exclude closed lost opportunities from the forecast.<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      C <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Each opportunity stage can be mapped to a forecast category. The
+'Closed Lost' opportunity stage is mapped to the 'Omitted' forecast category by default, which ensures that it does not appear in the forecast.
+There is no 'Lost' column in the forecast or a 'Do Not Include in Forecast' setting for the 'Closed Lost' opportunity stage.
+
+      </div>
+</details> 
+
+43. The Sales Director of an organization is interested in tracking changes to the sales pipeline for defining future sales goals. They would like to compare the current values of certain key attributes of opportunities, such as amount and stage, to their values one month ago. How could this requirement be met?<br />
+Choose 1 answer: <br />
+a. Create a reporting snapshot that stores the pipeline value weekly<br />
+b. Create a weekly scheduled pipeline report and compare the values over time<br />
+c. Export opportunity data to the data warehouse on a weekly basis for further analysis<br />
+d. Create a historical trend report on opportunities<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Historical trend reporting allows day-to-day and week-to-week changes in opportunities, cases, forecasts, and custom objects to be analyzed. Historical trend reporting uses a special custom report type designed to highlight changes between five snapshot dates, such as five business days or five business weeks.
+Although a reporting snapshot can also be used for reporting on historical data, it requires creating a new custom object with fields to store records loaded from a source report. After a source report, target object, target object fields, reporting snapshot, and field mapping have been defined, the reporting snapshot needs to be scheduled to run daily, weekly, or monthly so that data from the source report is loaded into the target object. This is what builds the historical data which can be used for reporting. If a reporting snapshot was not set up a month prior, there will be no past data available.
+On the other hand, when using historical trend reporting, Salesforce retains historical data for the previous three months plus the current month, which makes it a much easier option to use for this requirement.
+      </div>
+</details> 
+
+
+44. Cosmic Grocery sells its products to non-profit organizations at a discounted rate. A formula field has been defined on the Opportunity object to show whether the account is for a non-profit organization or a regular customer. A sales manager would like to view a report that shows the opportunities owned by each of his team members, grouped by the type of customer, i.e., non-profit organization or regular customer. Which report format is best to meet the requirement?<br />
+Choose 1 answer: <br />
+a. Summary report<br />
+b. Matrix report<br />
+c. Joined report<br />
+d. Tabular report<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+The phrase 'the opportunities owned by each of his team members, grouped by the type of customer' implies two groupings. Since two groupings are required, a matrix report can be utilized as it would group the data by both rows and columns.
+A summary report is less efficient for more than one group. A tabular report does not contain groups of data. Creating a joined report is also unnecessary since there is no need to view multiple blocks of data that provide different views of data.
+
+      </div>
+</details> 
+
+45. If cumulative forecast rollups are enabled, with which forecast categories are amounts from opportunities shown in the open pipeline column? <br />
+Choose 1 answer: <br />
+a. Commit + Omitted<br />
+b. Commit + Closed<br />
+c. Commit + Best Case<br />
+d. Commit + Best Case + Pipeline<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+If cumulative forecast rollups are enabled, opportunity amounts from opportunities that have a commit, best case, or pipeline forecast category are rolled up and displayed in the open pipeline column. If the 'Most Likely' forecast category has been added by the Salesforce Administrator, then opportunity amounts of opportunities under that category will be included as well.
+
+      </div>
+</details> 
+
+46. The analytics manager of Cosmic Gemina has created a few public report folders that contain reports related to accounts, opportunities, contacts, leads, and custom objects such as 'Sales Order. The sales director of the company would like to have the ability to create, edit, and delete the reports in these folders. He would also like to share the folders with other sales users within the company. Which permission should be assigned to the sales director for this use case?<br />
+Choose 1 answer: <br />
+a. Create and Customize Reports in Public Folders<br />
+b. Manage Reports in Public Folders. <br />
+c. Customize Reports in Public Folders. <br />
+d. Manage Reports<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+The 'Manage Reports in Public Folders' permission allows a user to create, edit, and delete reports, and manage their sharing in all public report folders. The other options represent invalid permissions.
+      </div>
+</details> 
+
+47. Cosmic Hispana is a company in Spain that manufactures sports equipment. It uses various custom objects to store information about products and sales orders. The company's Salesforce Administrator created public dashboard folders that contain dashboards displaying important information related to the custom objects. The analytics manager of the company should be able to create, rename, and edit dashboards in all folders as well as manage their sharing. What solution should be recommended for this requirement?<br />
+Choose 1 answer: <br />
+a. Assign the 'Manager' access level to the analytics manager for each public dashboard folder<br />
+b. Assign the 'Manage Dashboards' permission to the analytics manager through a permission set<br />
+c. Assign the 'Manage Dashboards in Public Folders' permission to the analytics manager through a permission set<br />
+d. Assign the 'Editor' access level to the analytics manager for each public dashboard folder<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      The Analytics Manager should be granted the 'Manage Dashboards in Public Folders' permission for this requirement. It would give the permission to create, rename, edit, and delete dashboards, and manage their sharing in all public dashboard folders.
+'Editor' and 'Manager' access levels are only applicable for granting access to specific report or dashboard folders. There is no 'Manage Dashboards' permission.
+      </div>
+</details> 
+
+48. Cosmic Software Solutions has a sales team that consists of dozens of inside sales reps who regularly reach out to prospects to sell the company's software products. They work on each lead using a specific set of actions. However, they spend too much time navigating from one lead to another and managing the associated tasks. Moreover, they're often not sure who they should contact next.
+Which of the following can streamline this process and give the reps a prioritized list of tasks to work on leads?<br />
+Choose 1 answer: <br />
+a. Pipeline Inspection<br />
+b. Sales Cloud Einstein Insights<br />
+c. Sales Engagement<br />
+d. Salesforce Inbox<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      C <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+            Sales Engagement is a streamlined solution offered by Salesforce that is tailored to inside sales teams. It includes features such as the Lightning Sales Console, Cadences, Work Queues, and Einstein Lead Scoring. A sales rep can access the Work Queue in the Lightning Sales Console to view a prioritized list of tasks to work on leads, which helps them know exactly what next step to take with each prospect. Einstein Lead Scoring prioritizes the leads based on lead scores and displays the factors behind the scores. Sales managers can use the Cadence Builder to define the sequences of activities to guide the inside sales reps through the best next steps. They can add contacts, leads, or person accounts to a cadence using a record detail page, list view, or report.
+Other solutions cannot be used to meet this requirement. Sales Cloud Einstein Insights gives sales reps intelligent information about accounts and opportunities using predictions based on Al. Salesforce Inbox is an email productivity tool that gives sales reps the ability to log emails and events to records, schedule emails to be sent later, insert available times for meetings, etc. Pipeline Inspection provides a consolidated view of pipeline metrics, opportunities, week-to-week changes, and close date predictions.
+Note: High Velocity Sales was renamed to Sales Engagement.
+      </div>
+</details> 
+
+49. What is true regarding the forecast category on an Opportunity record?<br />
+Choose 2 answers: <br />
+a. The forecast category is derived from the opportunity stage<br />
+b. The Forecast Category field is read-only and cannot be modified<br />
+c. The Forecast Category field value can be modified<br />
+d. If the Forecast Category field value is changed, the stage is automatically updated<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A and C <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+            The Forecast Category field value on an opportunity is mapped from the opportunity stage but can be updated. When the value is updated, the Stage field value is unaffected.
+      </div>
+</details> 
+
+50. The Business Intelligence Officer of Cosmic Felix owns a report folder that contains various reports related to accounts and opportunities. He has shared this folder with certain sales representatives so that they can view these reports, but in the future, he would like a sales manager to share the folder with the sales representatives who require access to the reports. The sales manager already has the user permission to view and edit reports in shared folders. What should a Sales Cloud consultant recommend for this requirement?<br />
+Choose 1 answer: <br />
+a. The sales manager should be granted 'Collaborator' access to the report folder.<br />
+b. The sales manager should be granted 'Administrator' access to the report folder.<br />
+c. The sales manager should be granted 'Edit' access to the report folder.<br />
+d. The sales manager should be granted 'Manage' access to the report folder.<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      For this requirement, the sales manager should be granted 'Manage' access to the report folder. This access level allows a user to manage the reports and sharing settings of a particular report folder, which means they can share the folder with other sales representatives in the future.
+The 'Edit' access level does not allow a user to share the report folder. There is no 'Collaborator' or 'Administrator' access level.
+      </div>
+</details> 
+
+51. Sales managers would like to be notified when an opportunity meets the 'Gold' customer category, which is defined by an opportunity amount greater than or equal to $500,000 and a probability that is 80% or more. An email notification must be sent to a specific list of users. What is the simplest way to meet this requirement? <br />
+Choose 1 answer: <br />
+a. Flow Builder<br />
+b. Process Builder<br />
+c. Big Deal Alert<br />
+d. Validation Rule<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+C <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      Big Deal Alerts can be used to send email notifications to specified users when an opportunity reaches a trigger probability and trigger amount.
+Process Builder and Flow Builder are tools that can perform similar functionality, but for the given use case, a Big Deal Alert is simpler to set up and easier to configure. A validation rule is used to validate the data entered by a user on a record and is not used for automating actions like sending an email.
+      </div>
+</details> 
+
+52. The Marketing Director would like a report that will measure the return on investment for the campaigns run this fiscal year. How would this requirement be addressed? <br />
+Choose 1 answer: <br />
+a. Create a 'Campaign ROI Analysis' report based on the Campaigns report type<br />
+b. Create a custom report type that includes campaign and related opportunities<br />
+c. Create a Visualforce report to calculate the ROl of opportunities related to campaigns<br />
+d. Create a 'Campaign ROI Analysis' report based on the Campaigns with Campaign Members report type<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      In Lightning Experience, a Campaign ROl Analysis report can be created based on the Campaigns report type and adding the appropriate fields to the report to calculate the ROl of campaigns using the value of won opportunities minus the campaign cost divided by the campaign cost.
+Creating a custom report type or a Visualforce report is not necessary as the
+'Campaign ROl Analysis' report requires less work while still allowing for customization.
+      </div>
+</details> 
+
+53. To enhance the productivity of Cosmic Capital's traveling sales representatives, the sales director aims to provide seamless access to Chatter updates, including feeds, groups, and contacts. Which Salesforce mobile application best suits this need?<br />
+Choose 1 answer: <br />
+a. Salesforce mobile app<br />
+b. Salesforce Sales Cloud app<br />
+c. Salesforce Einstein mobile app<br />
+d. Salesforce Productivity mobile app<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      The Salesforce Mobile app allows a user to improve productivity by accessing
+Chatter feeds and groups while traveling.
+There are no apps called the 'Salesforce Einstein mobile app', 'Salesforce Sales Cloud app', or 'Salesforce Productivity mobile app'.
+      </div>
+</details> 
+
+54. The Salesforce Administrator of Cosmic Electronics is building a custom app for account management. The administrator would like to add the utility bar to give users quick access to common productivity tools. Which actions can a user perform using the To Do List' item which appears by default in the utility bar?<br />
+Choose 3 answers: <br />
+a. Create Salesforce meetings<br />
+b. Log a call <br />
+c. Create labels <br />
+d. Create tasks<br />
+e. Reorder tasks<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      D <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+The 'To Do List' component is a default item in the utility bar that allows users to view, sort, label, and act on their tasks, including tasks from Sales Engagement cadences. They can also re-order by dragging and dropping them. Users can create new tasks and create new labels from this component.
+However, the component does not allow the creation of Salesforce meetings or logging of a call.
+      </div>
+</details> 
+
+
+
+55. Cosmic Whole Foods sells organic food products in various cities of the United States. The company provides home delivery of its products to customers through a team of drivers in each city. However, a driver often does not know the best way to reach a customer site, and there is also no means of providing realtime assistance to them. How can Salesforce Maps be used to resolve these issues?<br />
+Choose 3 answers: <br />
+a. Drivers can use a mobile device to find nearby customers.<br />
+b. Geofencing can be enabled to help drivers reach customers faster.<br />
+c. Live Tracking can be used to track the location of delivery drivers.<br />
+d. A customer can chat with the driver en route to the delivery location.<br />
+e. Delivery routes can be planned based on travel time and distance.<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A, C, E <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+    Salesforce Maps is a location intelligence technology offered by Salesforce that allows a company to visualize data, plan territories, track live locations, and optimize routes and schedules. The real-time location of delivery drivers and other assets of an organization can be tracked using Live Tracking.
+Drivers can turn on Live Tracking in the Salesforce mobile app and share their location, which allows managers to view their location, trip-related data, and other metrics.
+Salesforce Maps can be used on a mobile device to find nearby accounts/customers. Customer locations can be visualized geographically to identify clustered customers and plan delivery routes based on the travel time and distance of each customer.
+However, it does not allow a customer to chat with a driver who is en route to the delivery location. Geofencing can be enforced using longitude and latitude coordinates, territory/geographic boundaries like state lines, or proximity to customers, but its purpose is to ensure that drivers aren't traveling outside of their zones. Alerts of any unauthorized travel or movement can be enabled, and follow-up communication can be automated.
+      </div>
+</details> 
+
+56. Cosmic Solutions is considering to start using CRM Analytics for analyzing sales data stored in Salesforce. Which of the following statements are correct about
+CRM analytics dashboards?<br />
+Choose 2 answers: <br />
+a. CRM analytics dashboards can be created from templates<br />
+b. It is possible generate different layouts for different devices<br />
+c. Bulk selections are not available for CRM analytics dashboards<br />
+d. Once a dashboard is edited and saved, it is not possible to restore a previous version<br />
+<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A and B <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      In CRM Analytics, templates can be used to easily create dashboards. With Spring '24 update, bulk selection for the CRM dashboards is available for the improved efficiency.
+Version history can be used to restore a previous version of a dashboard.
+Different layouts can be generated for different devices.
+      </div>
+</details> 
+
+57. Cosmic Formata recently implemented Salesforce and has various report and dashboard folders. There are various users from different departments who require access to them, but their level of access should depend on their job functions. For instance, a sales representative should only be able to view the reports in a particular report folder, while a marketer should be able to view and edit the reports. What should a Sales Cloud consultant recommend to meet this requirement?<br />
+Choose 1 answer: <br />
+a. Create public groups for the sales users and grant 'Viewer',
+'Editor' or 'Collaborator' access to each public group based on the job functions of the users in the group.<br />
+b. Use enhanced folder sharing in Setup to share the report and dashboard folders with different sales users directly based on their job functions.<br />
+c. Create public groups for the sales users and grant 'Viewer', 'Editor' or 'Manager' access to each public group based on the job functions of the users in the group.<br />
+d. Create a permission set for each type of sales user and grant user permissions based on their job functions.<br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      C <br/>
+         <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      There are three possible access levels for report and dashboard folders, namely, 'Viewer', 'Editor', and 'Manager'. For this requirement, a folder's access level can be assigned to a public group based on the job functions of the users in the group. For example, if there's a public group for sales representatives who would like to view reports in a particular report folder, then the group can be granted 'Viewer' access to the report folder.
+There is no access level called 'Collaborator'. Permissions in a permission set cannot be used to grant access to specific report and dashboard folders.
+Enhanced folder sharing is not used to share report and dashboard folders with sales users directly. It is a setting that can be turned on to convert users' existing folder access levels to use new, more detailed access levels.
+      </div>
+</details> 

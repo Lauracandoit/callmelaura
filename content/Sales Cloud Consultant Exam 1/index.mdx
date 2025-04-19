@@ -1,0 +1,294 @@
+---
+title: "Sales Cloud Consultant Exam 1"
+description: " Let's study to get Sales Cloud Consultant Certificate with me"
+image: "../../public/blogs/salescloud.png"
+publishedAt: "2024-10-06"
+updatedAt: "2024-10-06"
+author: "Wendy"
+isPublished: true
+tags:
+- Salesforce
+- Sales Cloud
+- Sales Cloud Exam
+---
+
+1. A sales manager at Cosmic Freight Tools has access to edit an account record which acts as the parent of various child accounts in the account hierarchy. Which of the following is true regarding the sales manager's access to child accounts? <br />
+<div style= {{marginRight: '20px'}}>  
+a. Child accounts can be edited if the manager can edit the parent account<br />
+b. Child accounts can not be edited if the manager can edit the parent account<br />
+c. Child accounts can be viewed and edited by the sales manager via other sharing settings such as role hierarchy or sharing rule. <br />
+d. Child accounts will be readable if the manager can edit the parent account. <br />
+</div>      
+        <details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+                  c. Child accounts can be viewed and edited by the sales manager via other sharing settings such as role hierarchy or sharing rule. <br />
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  The account hierarchy has no impact on visibility. it is only a convinient UI representation of all accounts linked using the Parent account filed. The sales manager may or may not be able to view and edit the child accounts via other sharing settings such as role hierarchy or sharing rule. 
+              </div>
+        </details>  
+
+2. Global Insurance runs regular seminars and would liek to track the results including leads and existing customers that attended. They would like to udnerstand the performance of the sminar as well as be able to understand which seminars individuals attended. How could Salesforce be configured to meet these requirements? <br />
+Choose 1 answer: <br />
+a. Use Campagins to record and manage seminar details, and then add a custom object with lookup fields to Leads and Contacts to track who attended. <br />
+b. Create a custom object for seminars and another custom object to record the attendee with look up fields to Leads and Contacts. <br />
+c. Track the seminars using the Opportunity object and use Activities to track attendees<br />
+d. use Campagins to record and manage seminar details, and then track attendees using Campagins members. <br />
+ <details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+                  d. use Campagins to record and manage seminar details, and then track attendees using Campagins members. <br />
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  Rather than creating a custom solution, the standard Campagins functionally should be considered first. Campagins can be used to track marketing project, such as direct mail, seminars, and print advertisements. Campagins members are created from lead, Contacts, or Person account records and are linked to a Campaign. There is also a status field to record the interaction with the Campagin, e.g. If they attended the seminar. From the Campaign History related list on a Contact, lead, or Person Account detail page, the related seminar informaton would be available. 
+              </div>
+        </details>  
+
+
+3. Which of the following are true about Sales Territories? <br />
+Choose 2 answers: <br />
+a. Territories organize accounts and users who work with those accounts. <br />
+b. Users in a territory can always view and edit accounts associated with the territory. <br />
+c. Territory type has an impact on record visibility. <br />
+d. An account may be assigned to more than one territory<br />
+ <details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+                  a. Territories organize accounts and users who work with those accounts. <br />
+                  d. An account may be assigned to more than one territory<br />
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      Territories organize accounts and users who work with those accoutns. A company can structure their Salesforce data in a similar way as they structure their sales Territories. An account may be assigned to more than one territory,and multiple accounts can be assigned to a territory. 
+
+      Territory Type is only used for logically classfying the territories; it does not impact visibility or sharing. The access level to accounts in a territory varies depending on the defined Territory Access level. Default acccess levels for accounts can be view, view/edit. And View/edit/transfer/delete.  
+              </div>
+        </details>  
+
+
+4. A sales manager has noticed that certain Opportunities are supposed to close this month, but they are not being incorporated into the forecast, The organization currently uses a forecast type based on Opportunity revenue, and the 'Close Date' values are correct for this month. What could be the reason behind this issue?  <br />
+Choose 1 answer:  <br />
+a. The forecast category value on the Opportunity record is Omitted.  <br />
+b. There are Opportunity splits on these Opportunity record.  <br />
+c.  The Opportunity is in the incorrect territory.  <br />
+d. Opportunity stages have not been correlated to forecast categories yet.  <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+                 a. The forecast category value on the Opportunity record is Omitted.  <br />
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  Opportunity splits and territory management are not related to the monthly forecasts. Selecting a forecast category is required when creating an Opportunity stage, and existing stages are already correlated with forecast categories
+
+                  The only potential reason for this issue is that the Opportunities the manager believes should go into the monthly forecast have the forecast category set as Omitted.
+              </div>
+        </details>  
+
+
+5. One of the sales manager would like to discuss a sales proposal with a few selected Account managers. They want to make sure that the discussions related to it are available in one place and remain secure. Which options should the Salesforce Administrator consider? <br />
+Choose 2 answers: <br />
+a. Create a private Chatter group<br />
+b. Create a public chatter group<br />
+c. Create a unlisted chatter group<br />
+d. Create an unshred chatter group. <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A and C
+
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  Any user can join a public Chatter group and the detaisl will not remain secure In order to ensure that the group remains secure and that no other users is able to view the discussions.
+                  The only potential reason for this issue is that the Opportunities the manager believes should go into the monthly forecast have the forecast category set as Omitted.
+              </div>
+        </details>  
+
+
+6. Global Insurance is planning to Implement a custom object Policy that will have millions of records and is concerned about query performance. As a Sales Cloud Consultant, what would you need to consider regarding using indexes to speed up queries?  <br />
+Choose 2 answers:  <br />
+a. Custom indexes can be created on custom fields by contacting Salesforce support.  <br />
+b. indexes are created automatically on external ID fields.  <br />
+c. Custom indexes cannot be created on standard fields.  <br />
+d. Salesforce automatically creates an index on the name field only.  <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A and B
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  Custom indexes can be created on  certain field types by contacting Salesforce support. Custom indexes can be creted on standard fields. Salesforce will create an index on a number of fields for most objects, including name, CreateDate, LastModifiedDate, Email, Record ID
+
+              </div>
+        </details>  
+
+7. The marketing departement of MG Insurance has created an online Campagin that directs leads to a landing page with an online form to complete. How can a consultant user the marketing capabilities of Salesforce to support the sales process in this situation? <br />
+Choose 3 answers: <br />
+a. automatically associate leads created with an existing Campagin<br />
+b. automatically calculate the total value of Opportunities generated from the online Campagin<br />
+c. calculate the number of responses to the Campagin<br />
+d. automatically create a new Campagin when the first lead completes the online form. <br />
+e. automatically detect duplicate leads within a Campagin before create a new lead. <br />
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A and B and C<br />
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  Marketing capabilities in Salesforce include Campagin management and lead management to track Campagins and obtain leads. 
+
+                  When the Campagin ID is included in the web-to-lead form, Salesforce automatically associates the web leads with the Campagin. If it is not included, then the leads created will not be added to any Campagin, this feature is handy because upon conversion of the lead record. The Campagin record is automatically associated to the Opportunity record created. Using the information, one can track successful campagins that capture promissing leads and convert them to valueable Opportunities. 
+                  Several statics regarding the campagin can also be calculated, including the total number of leads captured and the total value of Opportunities created related to the campaign. 
+                  Salesforce does not check for duplicate leads when it come from Web to Lead. 
+              </div>
+        </details>  
+
+8. The sales departement of Cosmic Enterprises has bene receiving leads from the marketing departement that are non-responsesive to sales approaches. The leads have not been Qualified enough to justify contact. What can be done to improve the situation? <br />
+Choose 2 answers<br />
+a. Defind a lead process<br />
+b. Use data loader<br />
+c. Define a record type.<br /> 
+d. Define a lead score threshold. <br /> 
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              A and C<br />
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+            While defining the lead process, both marketing and sales departements can identify at which stage a lead can be considerd Qualified. Many organizations pass marketing leads to inside sales only if a lead reaches a lead-score threshold. 
+            Before passing on a lead, it is a best practice to make sure that the lead has a defined need, the necessary budget, the purchasing authority, and an appropriate purchasing timeline. If not, the lead should continue to be nurtured within marketing. An AppExchange app can be downloaded for lead scoring. Using Data loader or a record type would not help in this situation. 
+              </div>
+        </details>  
+
+
+9. The Sales manager at Bright paints Inc has noticed that sales reps are not completing the Opportunity Summary field before moving the Opportunity from New to needs Analysis. How could the company's Salesforce admin ensure that sales reps complete this field? <br />
+Choose 1. <br />
+a. Run a report of Opportunities with no "Opportunity Summary" and email it to the Sales manager<br />
+b. Define a record triggered flow that creates a task related to the Opportunity<br />
+c. Remove the "New" picklist value from the Stage field. <br />
+d. Create a validation rule that prevents edits to the Stage field to "Needs Analysis" it the Opportunity Summary field is blank. <br />
+
+<details>
+              <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+              <div >
+              D<br />
+                 <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+            A validation rule can use the ISPICKVA an ISBLANK functions to check whether the Opportunity Summary field has a value based on the Opportunity Stage, Based on the specific requirement, we only want the validation rule to prevent saving the record if the Stage held is New to Needs Analysis and the Opportunity Summary is null. 
+              </div>
+        </details> 
+
+10. Cosmic Sporting Goods is a company with a telesales contact ccenter in San francisco. Many of the company's existing and potential customers live in the United States. Sales reps at the contact center use Sales Dialer to make an receive calls via Salesforce. With the purpose of increasing customer engagement, which feature can be enabled to ensure that phone numbers appear with the same are code as the prosects that reps are calling? <br />
+Choose 1 answer: <br />
+a. Local presence<br />
+b. Global presence<br />
+c. Dialer number<br />
+d. Call Mornitoring<br />
+
+      <details>
+                  <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+                  <div >
+                  A<br />
+            <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+
+                  Local presence can be enabled to show local numbers when calling customers with Sales Dialer. It is for use only by customers in the US and is intended to be used to dial only US numbers. <br />
+                  A Dialer number can be assigned so the calls made and received don't appear to be coming from an unknown number. Call Mornitoring allows sales managers to monitor their reps's interactions and coach them. "Global Presence" is a non existent feature. <br />
+                  Note: Sales Dialer was previously called "Lightning Dialer" 
+                  </div>
+            </details> 
+
+11. The Sales Management team at Northern trail Outfitters (NTO) wants to analyze how the sales funnel is Changing throughout the month. NTO wants to store details of open Opportunities weekly, and forecasts and closes business monthly. What should be recommend? <br/>
+a. Schedule a custom forecast report to run weekly and store the results in a custom report folder. <br/>
+b. Create a reporting snapshot to run weekly and store the results in a custom object. <br/>
+c. Create a reporting snapshot to run daily and store the results in a custom object. <br/>
+d. Schedule a custom forecast report to run daily and store the results in a custom report folder. <br/>
+      <details>
+                  <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+                  <div >
+                  B
+                  </div>
+      </details> 
+
+12. Universal Containers wants to capture business sectore information on a lead and display the information on the account and contact once the lead has been converted. How can these requirements be met? <br />
+a. Create a custom field on the Lead and Account objects and configure mapping of these 2 fields for conversion. Create a custom formula field on the Account object to pull the value from Contact object. <br/>
+b. Create a custom field on the Lead and account objects. create a custom formula field on the contact object to pull the value from the account object. <br />
+c. Crete a custom field on the lead, account and contact objects and congigure mapping of these two fields for conversion. Use a trigger to update the contact field with the Account value. <br />
+d. Create a custom field on the Lead and Account objects and configure mapping of these 2 fields for conversion. Create a custom formula field on the contact object to pull the value from the account object. <br />
+<details>
+                  <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+                  <div >
+                  D
+                  </div>
+      </details> 
+
+13. Universal Containers is preparing for the launch of its new Sales Cloud implementationto a global user base. With previous sales automation applications, the company had slow adoption of the new solution. Which three Sales Cloud deployment factors shuold be considered to help ensure adoption? (Choose three)<br />
+a. maintaince release Schedule<br />
+b. management Communication<br />
+c. Sales rep quoaa targets<br />
+d. Type of training delivered<br />
+<details>
+                  <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+                  <div >
+                  B, D, E <br />
+                  </div>
+      </details> 
+
+14. A consultant is meeting with a new client to design a rollout strategy for its Sales Cloud implementation. What should the consultant do during the planning stage to ensure a successful implementation? <br />
+a. Design a prototype of the suggested solution. <br />
+b. Identify which salesforce features and functions to use. <br /> 
+c. Define goals, metrics, project Schedule, and sales processes <br />
+<details>
+                  <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+                  <div >
+                  C<br />
+            <span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+                  During the planning stage, it is crucial to define clear goals, metrics, project schedule, and sales processes. This ensures that all stakeholders have a shared understanding of the project objectives, timelines and success criteria. Defining these elements provides a structured framework for the implementatio and helps in tracking progress and addressing issues proactively. 
+                        </div>
+            </details> 
+
+15. CK is adding hundreds of new accounts to Sales Cloud daily. CK uses an automated process to assign Account owners. If no assignment can be made for an account, it will be routed to a specific user who will manually review and re-assign it at a later date. This user may have thousands of account records assign. 
+Which solution should the consultant recommend when CK sets up the new account process?<br />
+a. Place the user in a separate role at the highest level of the role hierarchy. <br />
+b. Add the user to a separate role at the lowest level of the role hierarchy<br />
+c. Assign the Modify All Data permission to the user. <br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      B<br />
+<span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+      Adding the user to a separate role at the lowest level of the role hierarchy ensures that the manual reviewer does not inadvertently gain access to other users' accounts through role hierarchy - based sharing rules. This setup confines the user's access to only those records explicitly assigned to them, maintaining data security and ensuring proper access control. 
+            </div>
+</details> 
+
+
+16. CK wants to help its sales reps identify stalled Opportunities in a signle view. Which solution should the consultant recommend to meet the requirement? <br />
+a. Use Deal Insets to Pipeline Inspection<br />
+b. Create a screen flow<br />
+c. Create a Lightning Web Component. <br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      A<br />
+<span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Deal insights within Pipeline Inspection in Salesforce Provides sales reps with a single view to identify and manage stalled Opportunities. This feature leverages AI to highlight deals that may require attention based on changes in engagement, activity, and other deal characteristics. It helps sales reps quickly identify which Opportunities need follow-up and which are at risk of stalling, providing valuable insights for pipeline management. 
+            </div>
+</details> 
+
+17. Ck wants to enable person accounts. What does the consultant need to do before enabling Person accounts? <br />
+a. Set Default sharing of account to public read/write. <br />
+b. Disable access to experience cloud sites during the cutover<br />
+c. Create at least one Account record type. <br />
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      C<br />
+<span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Before enabling Person accounts, it is mandatory to create at least one account record type in Salesforce. Person accounts use record types to differentiate between business accouns and individual consumer accounts. This step ensures that the Salesforce org is properly congigured to handle Person accounts, which combine the characteristics of both accounts and contacts. 
+
+            </div>
+</details> 
+
+18. CK recently completed the first phase of its Sales Cloud implementation. In the next phase, one factor that consultants are considering is whether any of CK's 500 sales agents are using a mobile device or a browser to access Salesforce. 
+What should the consultants do to efficiently analyze how users are logging in to Salesforce? 
+a. Review the log in history on the user record. 
+b. Create a custom report on the User object. 
+c. Create a user report an filter by login Subtype. 
+<details>
+      <summary style={{ color: 'red', fontWeight: 'bold' }}> Result</summary>
+      <div >
+      C<br />
+<span style={{ color: 'blue', fontWeight: 'bold' }}>Explanation: </span> 
+Creating a User report an filtering by login Subtype is the most efficient way to analyze how users are logging into Salesforce, whether through a mobile device or a browser. The log in subtype provides specifix information about the method of access, making it easier to assess user behavior and preferences accurately. This approach allows consultants to generate insights without manually reviewing individual log in histories. 
+            </div>
+</details> 
+
