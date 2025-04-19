@@ -44,7 +44,7 @@ export default function Home() {
                       1000,
                       "A Salesforce BA ",
                       1000,
-                      "A Customer Support Team Lead ",
+                      "A Customer Support Leader ",
                       1000,
                     ]}
                     wrapper="span"
